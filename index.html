@@ -179,23 +179,29 @@
                 Contact <span>Me</span>
                 
             </h2>
-            <form action="https://formsubmit.co/anujk938654@gmail.com" method="POST" id="contact-form">
-                <div class="input-box">
-                    <input type="text" name="name"  placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
 
+               <input type="hidden" name="access_key" value="aef543c7-13be-44fd-8bd8-8ec1e884f276">
+            
+               <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
+
                 <div class="input-box">
-                    <input type="number" name="phone" placeholder="Mobile Number" required>
-                    <input type="text" name="subject" placeholder="Email Subject" required>
+                   <input type="number" name="phone" placeholder="Mobile Number" required>
+                   <input type="text" name="subject" placeholder="Email Subject" required>
                 </div>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="" value="">
+
+                 <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
                 <input type="submit" value="Send Message" class="btn">
             </form>
             <p id="success-message" style="display:none; color:#00ff99;">
                 Thanks for connecting with me!
+            </p>
+            <p id="error-message" style="display:none; color:#ff4d4d;">
+               Oops! Something went wrong. Please try again later.
             </p>
          </section> 
 
